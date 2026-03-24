@@ -1,0 +1,81 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}CV — LEGRE Zaddy Wilfried Ghislain{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'cv/css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#profil">{% trans "Profil" %}</a></li>
+            <li><a href="#contact">{% trans "Contacts" %}</a></li>
+            <li><a href="#experiences">{% trans "Expériences" %}</a></li>
+            <li><a href="#certifications">{% trans "Certifications" %}</a></li>
+            <li><a href="#formation">{% trans "Cursus Académique" %}</a></li>
+            <li><a href="#competences">{% trans "Compétences" %}</a></li>
+            <li><a href="#langues">{% trans "Langues" %}</a></li>
+        </ul>
+        <div class="nav-actions">
+            <form action="{% url 'set_language' %}" method="post" id="lang-form">
+                {% csrf_token %}
+                <input name="next" type="hidden" value="{{ request.path }}">
+                {% if LANGUAGE_CODE == 'fr' %}
+                    <input name="language" type="hidden" value="en">
+                    <button type="submit" class="btn-lang">EN</button>
+                {% else %}
+                    <input name="language" type="hidden" value="fr">
+                    <button type="submit" class="btn-lang">FR</button>
+                {% endif %}
+            </form>
+            <button class="btn-theme" onclick="toggleTheme()">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>LEGRE Zaddy Wilfried Ghislain — Qualiticien QHSE BAC+6 — Abidjan, Côte d'Ivoire</p>
+        <p>Langue actuelle : {{ LANGUAGE_CODE }}</p>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.timeline-item, .carte, .contact-item, .tags li')
+            .forEach(el => observer.observe(el));
+
+        function toggleTheme() {
+            document.body.classList.toggle('dark');
+            const icon = document.querySelector('.btn-theme i');
+            if (document.body.classList.contains('dark')) {
+                icon.className = 'fas fa-sun';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                icon.className = 'fas fa-moon';
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark');
+            document.querySelector('.btn-theme i').className = 'fas fa-sun';
+        }
+    </script>
+
+</body>
+</html>

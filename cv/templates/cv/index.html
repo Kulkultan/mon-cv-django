@@ -1,0 +1,279 @@
+{% extends 'cv/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}CV — LEGRE Zaddy Wilfried Ghislain{% endblock %}
+
+{% block content %}
+
+<section id="profil">
+    <div class="profil-photo">
+        <img src="{% static 'cv/img/photo.jpeg' %}" alt="LEGRE Zaddy Wilfried Ghislain">
+    </div>
+    <h1>LEGRE Zaddy Wilfried Ghislain</h1>
+    <p class="titre-poste">{% trans "Qualiticien QHSE — BAC+6" %}</p>
+    <p>{% trans "Qualiticien, doté de plus de 11 années d'expérience, j'ai d'ores et déjà exercé dans des secteurs d'activité sensibles comme la santé et l'administration publique. Cela m'a permis de développer une solide expertise dans l'élaboration de plans d'actions stratégiques, ainsi que l'accompagnement des organisations vers la certification et l'amélioration continue de leurs performances. Reconnu pour ma rigueur, mon esprit d'analyse et mes compétences en management, je m'investis pleinement dans l'atteinte des résultats et l'amélioration continue des performances. Proactif, je contribue activement à la modernisation des processus et à l'optimisation des organisations. Faisant partie de l'équipe ayant reçu un lauréat d'innovation administrative, je m'inscris dans une dynamique d'excellence et de transformation durable." %}</p>
+    <button class="btn-pdf" onclick="window.print()">
+        <i class="fas fa-download"></i> {% trans "Télécharger le CV" %}
+    </button>
+</section>
+
+<section id="contact">
+    <h2>{% trans "Contacts" %}</h2>
+    <div class="contact-grid">
+        <a href="mailto:zaddywilfriedlegre@gmail.com" class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>zaddywilfriedlegre@gmail.com</span>
+        </a>
+        <a href="tel:+22507489138004" class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+225 07 48 91 38 04</span>
+        </a>
+        <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>{% trans "08 BP 2203 Abidjan 08" %}</span>
+        </div>
+    </div>
+</section>
+
+<section id="experiences">
+    <h2>{% trans "Expériences Professionnelles (11 ans)" %}</h2>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <div class="timeline-point"></div>
+            <div class="timeline-content">
+                <h3>{% trans "Chef de service Promotion de la Qualité" %}</h3>
+                <span class="date">{% trans "Août 2025 — Maintenant" %}</span>
+                <p class="employeur">{% trans "Ministère de la Fonction Publique et de la Modernisation de l'Administration" %}</p>
+                <ul>
+                    <li>{% trans "Lauréat du deuxième prix de l'administration la plus innovante" %}</li>
+                    <li>{% trans "Mise à jour de l'architecture documentaire selon la norme ISO 9001" %}</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-point"></div>
+            <div class="timeline-content">
+                <h3>{% trans "Chef du service Qualité et sécurité des soins" %}</h3>
+                <span class="date">{% trans "Février 2023 — Juillet 2025 (2 ans 6 mois)" %}</span>
+                <p class="employeur">{% trans "Centre National de Prévention et de Traitement de l'Insuffisance Rénale (CNPTIR)" %}</p>
+                <ul>
+                    <li>{% trans "Audit diagnostic selon les normes ISO 9001:2015 et ISO 15189:2022" %}</li>
+                    <li>{% trans "Élaboration du plan d'action pour la certification et l'accréditation" %}</li>
+                    <li>{% trans "Supervision et mise en exécution des activités du plan d'action" %}</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-point"></div>
+            <div class="timeline-content">
+                <h3>{% trans "Assistant Qualité Freelance" %}</h3>
+                <span class="date">{% trans "Janvier 2022 — Janvier 2023 (1 an 1 mois)" %}</span>
+                <p class="employeur">{% trans "EL-KABOD" %}</p>
+                <ul>
+                    <li>{% trans "Chargé de la gestion des fournisseurs" %}</li>
+                    <li>{% trans "Coordination des opérations logistiques" %}</li>
+                    <li>{% trans "Suivi du respect des normes d'hygiène et de sécurité" %}</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="timeline-item">
+            <div class="timeline-point"></div>
+            <div class="timeline-content">
+                <h3>{% trans "Assistant Qualité et Logisticien" %}</h3>
+                <span class="date">{% trans "Juin 2020 — Décembre 2021 (1 an 7 mois)" %}</span>
+                <p class="employeur">GERELK HOLDING</p>
+                <ul>
+                    <li>{% trans "Rédaction des processus QHSE" %}</li>
+                    <li>{% trans "Conception des tableaux de bord et cartographie des risques" %}</li>
+                    <li>{% trans "Gestion du parc (camions, voitures) et veille des stocks" %}</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-point"></div>
+            <div class="timeline-content">
+                <h3>{% trans "Technicien Dessinateur Projeteur" %}</h3>
+                <span class="date">{% trans "Decembre 2019 — Mars 2020 (4 mois)" %}</span>
+                <p class="employeur">3id2plus</p>
+                <ul>
+                    <li>{% trans "Dessin des zones PA-PB" %}</li>
+                    <li>{% trans "Etablissement du parcours de la fibre optique" %}</li>
+                    <li>{% trans "Dessins des PA et PB" %}</li>
+                    <li>{% trans "Dessins des poteaux FT et BT" %}</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-point"></div>
+            <div class="timeline-content">
+                <h3>{% trans "Teleconseiller pour SFR France" %}</h3>
+                <span class="date">{% trans "Mars 2019 — Août 2019 (6 mois)" %}</span>
+                <p class="employeur">INTELCIA</p>
+                <ul>
+                    <li>{% trans "Traitement au cas par cas des demandes clients" %}</li>
+                    <li>{% trans "Propositions commercialies telephonique" %}</li>
+                    <li>{% trans "Fidélisation telephonique des clients" %}</li>
+                    <li>{% trans "Traitement de 30 à 50 demandes par jours" %}</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-point"></div>
+            <div class="timeline-content">
+                <h3>{% trans "Assistant Qualité et Projet" %}</h3>
+                <span class="date">{% trans "Janvier 2015 — Mars 2018 (3 ans 3 mois)" %}</span>
+                <p class="employeur">AFRI'K KING</p>
+                <ul>
+                    <li>{% trans "Rédaction des procedures" %}</li>
+                    <li>{% trans "Suivi et contrôle du respect des procédures " %}</li>
+                    <li>{% trans "Etablissement d'indicateur de suivi pertinent" %}</li>
+                    <li>{% trans "Suivi des projets" %}</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-point"></div>
+            <div class="timeline-content">
+                <h3>{% trans "Qualiticien" %}</h3>
+                <span class="date">{% trans "Juin 2017 — Décembre 2017 (6 mois)" %}</span>
+                <p class="employeur">{% trans "LECAT — Laboratoire d'Essai de Contrôle d'Analyse" %}</p>
+                <ul>
+                    <li>{% trans "Mise en place de la démarche QHSE" %}</li>
+                    <li>{% trans "Rédaction des modes opératoires et enquêtes de satisfaction" %}</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-point"></div>
+            <div class="timeline-content">
+                <h3>{% trans "Stagiaire" %}</h3>
+                <span class="date">{% trans "Août 2015 — Octobre 2015 (6 mois)" %}</span>
+                <p class="employeur">DESFORGES CONSULTING INTERNATIONAL</p>
+                <ul>
+                    <li>{% trans "Rédaction d'OTF et suivi des plans de formation" %}</li>
+                    <li>{% trans "Formalisation des procédures d'organisation" %}</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-point"></div>
+            <div class="timeline-content">
+                <h3>{% trans "Stagiaire Environnement" %}</h3>
+                <span class="date">{% trans "Octobre 2011 — Avril 2012 (6 mois)" %}</span>
+                <p class="employeur">{% trans "CIAPOL — Centre Ivoirien Anti-Pollution" %}</p>
+                <ul>
+                    <li>{% trans "Synthèse des Études d'Impact Environnementales et Sociales" %}</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="certifications">
+    <h2>{% trans "Certifications" %}</h2>
+    <div class="carte">
+        <h3>{% trans "Sensibilisation ISO 9001:2015" %}</h3>
+    </div>
+    <div class="carte">
+        <h3>{% trans "Sensibilisation ISO 15189:2022" %}</h3>
+    </div>
+    <div class="carte">
+        <h3>{% trans "English Intermediate B1.2" %}</h3>
+    </div>
+    <div class="carte">
+        <h3>{% trans "Formation Hygiène et Sécurité" %}</h3>
+    </div>
+    <div class="carte">
+        <h3>{% trans "Leading Healthcare Quality and Safety" %}</h3>
+    </div>
+</section>
+
+<section id="formation">
+    <h2>{% trans "Cursus Académique" %}</h2>
+
+    <div class="carte">
+        <h3>{% trans "Mastère spécialisé QHSE — BAC+6" %}</h3>
+        <span class="date">2019 — 2020</span>
+        <p class="employeur">Groupe INSTEC</p>
+    </div>
+
+    <div class="carte">
+        <h3>{% trans "Master II Sciences de Gestion — BAC+5" %}</h3>
+        <span class="date">2012 — 2014</span>
+        <p class="employeur">{% trans "Activités Minières, Pétrolières et Énergétiques" %}</p>
+    </div>
+
+    <div class="carte">
+        <h3>{% trans "Diplôme Français Sciences de Gestion — BAC+3" %}</h3>
+        <span class="date">2011 — 2012</span>
+        <p class="employeur">{% trans "Activités Minières, Pétrolières et Énergétiques" %}</p>
+    </div>
+
+    <div class="carte">
+        <h3>{% trans "BTS Mines Géologie Pétrole — BAC+2" %}</h3>
+        <span class="date">2009 — 2011</span>
+        <p class="employeur">{% trans "Ecole Supérieur d'Energie et Pétrole" %}</p>
+    </div>
+
+    <div class="carte">
+        <h3>{% trans "BAC série D — Mention Assez Bien" %}</h3>
+        <span class="date">2006 — 2007</span>
+        <p class="employeur">{% trans "Lycée de Daoukro" %}</p>
+    </div>
+</section>
+
+<section id="competences">
+    <h2>{% trans "Compétences" %}</h2>
+    <ul class="tags">
+        <li>{% trans "ISO 9001:2015" %}</li>
+        <li>{% trans "ISO 15189:2022" %}</li>
+        <li>{% trans "Management QHSE" %}</li>
+        <li>{% trans "Audit qualité" %}</li>
+        <li>{% trans "Plans d'action" %}</li>
+        <li>{% trans "Amélioration continue" %}</li>
+        <li>{% trans "Tableaux de bord" %}</li>
+        <li>{% trans "Cartographie des risques" %}</li>
+        <li>{% trans "Hygiène & Sécurité" %}</li>
+        <li>{% trans "Permis de conduire (B C D E A)" %}</li>
+    </ul>
+</section>
+
+<section id="langues">
+    <h2>{% trans "Langues" %}</h2>
+    <div class="langues-grid">
+        <div class="langue-item">
+            <div class="langue-info">
+                <span class="langue-nom">{% trans "Français" %}</span>
+                <span class="langue-niveau">{% trans "Natif" %}</span>
+            </div>
+            <div class="langue-barre">
+                <div class="langue-progression" style="width: 100%"></div>
+            </div>
+        </div>
+        <div class="langue-item">
+            <div class="langue-info">
+                <span class="langue-nom">{% trans "Anglais" %}</span>
+                <span class="langue-niveau">{% trans "Intermédiaire B1.2" %}</span>
+            </div>
+            <div class="langue-barre">
+                <div class="langue-progression" style="width: 55%"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

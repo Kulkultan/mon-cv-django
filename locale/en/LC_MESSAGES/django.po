@@ -1,0 +1,282 @@
+# English translations for MonCv
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+
+msgid "Qualiticien QHSE — BAC+6"
+msgstr "QHSE Quality Engineer — BAC+6"
+
+msgid "Qualiticien, doté de plus de 11 années d'expérience, j'ai d'ores et déjà exercé dans des secteurs d'activité sensibles comme la santé et l'administration publique. Cela m'a permis de développer une solide expertise dans l'élaboration de plans d'actions stratégiques, ainsi que l'accompagnement des organisations vers la certification et l'amélioration continue de leurs performances. Reconnu pour ma rigueur, mon esprit d'analyse et mes compétences en management, je m'investis pleinement dans l'atteinte des résultats et l'amélioration continue des performances. Proactif, je contribue activement à la modernisation des processus et à l'optimisation des organisations. Faisant partie de l'équipe ayant reçu un lauréat d'innovation administrative, je m'inscris dans une dynamique d'excellence et de transformation durable."
+msgstr "Quality professional with over 11 years of experience, I have worked in sensitive sectors such as healthcare and public administration. This has allowed me to develop solid expertise in strategic action planning and supporting organizations towards certification and continuous performance improvement. Recognized for my rigor, analytical mindset and management skills, I am fully committed to achieving results and continuous improvement. Proactive, I actively contribute to process modernization and organizational optimization. As part of the team that received an administrative innovation award, I am driven by a dynamic of excellence and lasting transformation."
+
+msgid "Télécharger le CV"
+msgstr "Download Resume"
+
+msgid "Contacts"
+msgstr "Contacts"
+
+msgid "08 BP 2203 Abidjan 08"
+msgstr "08 BP 2203 Abidjan 08"
+
+msgid "Expériences Professionnelles (11 ans)"
+msgstr "Professional Experience (11 years)"
+
+msgid "Chef de service Promotion de la Qualité"
+msgstr "Head of Quality Promotion Department"
+
+msgid "Août 2025 — Maintenant"
+msgstr "August 2025 — Present"
+
+msgid "Ministère de la Fonction Publique et de la Modernisation de l'Administration"
+msgstr "Ministry of Public Service and Administrative Modernization"
+
+msgid "Lauréat du deuxième prix de l'administration la plus innovante"
+msgstr "Winner of the second prize for the most innovative administration"
+
+msgid "Mise à jour de l'architecture documentaire selon la norme ISO 9001"
+msgstr "Update of the documentary architecture according to ISO 9001 standard"
+
+msgid "Chef du service Qualité et sécurité des soins"
+msgstr "Head of Quality and Patient Safety Department"
+
+msgid "Février 2023 — Juillet 2025 (2 ans 6 mois)"
+msgstr "February 2023 — July 2025 (2 years 6 months)"
+
+msgid "Centre National de Prévention et de Traitement de l'Insuffisance Rénale (CNPTIR)"
+msgstr "National Center for Prevention and Treatment of Renal Failure (CNPTIR)"
+
+msgid "Audit diagnostic selon les normes ISO 9001:2015 et ISO 15189:2022"
+msgstr "Diagnostic audit according to ISO 9001:2015 and ISO 15189:2022 standards"
+
+msgid "Élaboration du plan d'action pour la certification et l'accréditation"
+msgstr "Development of the action plan for certification and accreditation"
+
+msgid "Supervision et mise en exécution des activités du plan d'action"
+msgstr "Supervision and implementation of action plan activities"
+
+msgid "Assistant Qualité Freelance"
+msgstr "Freelance Quality Assistant"
+
+msgid "Janvier 2022 — Janvier 2023 (1 an 1 mois)"
+msgstr "January 2022 — January 2023 (1 year 1 month)"
+
+msgid "EL-KABOD"
+msgstr "EL-KABOD"
+
+msgid "Chargé de la gestion des fournisseurs"
+msgstr "In charge of supplier management"
+
+msgid "Coordination des opérations logistiques"
+msgstr "Coordination of logistics operations"
+
+msgid "Suivi du respect des normes d'hygiène et de sécurité"
+msgstr "Monitoring compliance with health and safety standards"
+
+msgid "Assistant Qualité et Logisticien"
+msgstr "Quality Assistant and Logistician"
+
+msgid "Juin 2020 — Décembre 2021 (1 an 7 mois)"
+msgstr "June 2020 — December 2021 (1 year 7 months)"
+
+msgid "Rédaction des processus QHSE"
+msgstr "Writing QHSE processes"
+
+msgid "Conception des tableaux de bord et cartographie des risques"
+msgstr "Design of dashboards and risk mapping"
+
+msgid "Gestion du parc (camions, voitures) et veille des stocks"
+msgstr "Fleet management (trucks, cars) and stock monitoring"
+
+msgid "Technicien Dessinateur Projeteur"
+msgstr "Technical Draughtsman"
+
+msgid "Decembre 2019 — Mars 2020 (4 mois)"
+msgstr "December 2019 — March 2020 (4 months)"
+
+msgid "Dessin des zones PA-PB"
+msgstr "Drawing of PA-PB zones"
+
+msgid "Etablissement du parcours de la fibre optique"
+msgstr "Mapping of fiber optic routes"
+
+msgid "Dessins des PA et PB"
+msgstr "Drawings of PA and PB"
+
+msgid "Dessins des poteaux FT et BT"
+msgstr "Drawings of FT and BT poles"
+
+msgid "Teleconseiller pour SFR France"
+msgstr "Customer Advisor for SFR France"
+
+msgid "Mars 2019 — Août 2019 (6 mois)"
+msgstr "March 2019 — August 2019 (6 months)"
+
+msgid "Traitement au cas par cas des demandes clients"
+msgstr "Case-by-case handling of customer requests"
+
+msgid "Propositions commercialies telephonique"
+msgstr "Commercial proposals by phone"
+
+msgid "Fidélisation telephonique des clients"
+msgstr "Customer retention by phone"
+
+msgid "Traitement de 30 à 50 demandes par jours"
+msgstr "Processing 30 to 50 requests per day"
+
+msgid "Assistant Qualité et Projet"
+msgstr "Quality and Project Assistant"
+
+msgid "Janvier 2015 — Mars 2018 (3 ans 3 mois)"
+msgstr "January 2015 — March 2018 (3 years 3 months)"
+
+msgid "Rédaction des procedures"
+msgstr "Writing procedures"
+
+msgid "Suivi et contrôle du respect des procédures "
+msgstr "Monitoring and control of procedure compliance"
+
+msgid "Etablissement d'indicateur de suivi pertinent"
+msgstr "Establishment of relevant monitoring indicators"
+
+msgid "Suivi des projets"
+msgstr "Project monitoring"
+
+msgid "Qualiticien"
+msgstr "Quality Engineer"
+
+msgid "Juin 2017 — Décembre 2017 (6 mois)"
+msgstr "June 2017 — December 2017 (6 months)"
+
+msgid "LECAT — Laboratoire d'Essai de Contrôle d'Analyse"
+msgstr "LECAT — Testing and Analysis Control Laboratory"
+
+msgid "Mise en place de la démarche QHSE"
+msgstr "Implementation of the QHSE approach"
+
+msgid "Rédaction des modes opératoires et enquêtes de satisfaction"
+msgstr "Writing operating procedures and satisfaction surveys"
+
+msgid "Stagiaire"
+msgstr "Intern"
+
+msgid "Août 2015 — Octobre 2015 (6 mois)"
+msgstr "August 2015 — October 2015 (6 months)"
+
+msgid "Rédaction d'OTF et suivi des plans de formation"
+msgstr "Writing OTF and monitoring training plans"
+
+msgid "Formalisation des procédures d'organisation"
+msgstr "Formalization of organizational procedures"
+
+msgid "Stagiaire Environnement"
+msgstr "Environmental Intern"
+
+msgid "Octobre 2011 — Avril 2012 (6 mois)"
+msgstr "October 2011 — April 2012 (6 months)"
+
+msgid "CIAPOL — Centre Ivoirien Anti-Pollution"
+msgstr "CIAPOL — Ivorian Anti-Pollution Center"
+
+msgid "Synthèse des Études d'Impact Environnementales et Sociales"
+msgstr "Synthesis of Environmental and Social Impact Studies"
+
+msgid "Certifications"
+msgstr "Certifications"
+
+msgid "Sensibilisation ISO 9001:2015"
+msgstr "ISO 9001:2015 Awareness Training"
+
+msgid "Sensibilisation ISO 15189:2022"
+msgstr "ISO 15189:2022 Awareness Training"
+
+msgid "English Intermediate B1.2"
+msgstr "English Intermediate B1.2"
+
+msgid "Formation Hygiène et Sécurité"
+msgstr "Health and Safety Training"
+
+msgid "Leading Healthcare Quality and Safety"
+msgstr "Leading Healthcare Quality and Safety"
+
+msgid "Cursus Académique"
+msgstr "Academic Background"
+
+msgid "Mastère spécialisé QHSE — BAC+6"
+msgstr "Specialized Master's in QHSE — BAC+6"
+
+msgid "Master II Sciences de Gestion — BAC+5"
+msgstr "Master II in Management Sciences — BAC+5"
+
+msgid "Activités Minières, Pétrolières et Énergétiques"
+msgstr "Mining, Petroleum and Energy Activities"
+
+msgid "Diplôme Français Sciences de Gestion — BAC+3"
+msgstr "French Degree in Management Sciences — BAC+3"
+
+msgid "BTS Mines Géologie Pétrole — BAC+2"
+msgstr "HND in Mining Geology and Petroleum — BAC+2"
+
+msgid "Ecole Supérieur d'Energie et Pétrole"
+msgstr "School of Energy and Petroleum"
+
+msgid "BAC série D — Mention Assez Bien"
+msgstr "BAC series D — With Merit"
+
+msgid "Lycée de Daoukro"
+msgstr "Daoukro High School"
+
+msgid "Compétences"
+msgstr "Skills"
+
+msgid "ISO 9001:2015"
+msgstr "ISO 9001:2015"
+
+msgid "ISO 15189:2022"
+msgstr "ISO 15189:2022"
+
+msgid "Management QHSE"
+msgstr "QHSE Management"
+
+msgid "Audit qualité"
+msgstr "Quality Audit"
+
+msgid "Plans d'action"
+msgstr "Action Plans"
+
+msgid "Amélioration continue"
+msgstr "Continuous Improvement"
+
+msgid "Tableaux de bord"
+msgstr "Dashboards"
+
+msgid "Cartographie des risques"
+msgstr "Risk Mapping"
+
+msgid "Hygiène & Sécurité"
+msgstr "Health & Safety"
+
+msgid "Informatique (B C D E A)"
+msgstr "IT Skills (B C D E A)"
+
+msgid "Langues"
+msgstr "Languages"
+
+msgid "Français"
+msgstr "French"
+
+msgid "Natif"
+msgstr "Native"
+
+msgid "Anglais"
+msgstr "English"
+
+msgid "Intermédiaire B1.2"
+msgstr "Intermediate B1.2"
+
+msgid "Profil"
+msgstr "Profile"
+
+msgid "Expériences"
+msgstr "Experience"
