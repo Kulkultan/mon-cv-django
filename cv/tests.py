@@ -1,8 +1,11 @@
 from datetime import date
+import os
 
 from django.test import TestCase
 from django.urls import reverse
 from django.utils.translation import override
+from django.core.management import call_command
+from django.contrib.auth import get_user_model
 
 from .models import Experience, Profile
 
@@ -55,3 +58,32 @@ class CvPrintRegressionTests(TestCase):
 
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, 'href="/en/" class="chip-action">EN</a>', html=False)
+
+    def test_bootstrap_production_creates_or_updates_superuser(self):
+        previous_username = os.environ.get("DJANGO_SUPERUSER_USERNAME")
+        previous_password = os.environ.get("DJANGO_SUPERUSER_PASSWORD")
+        previous_email = os.environ.get("DJANGO_SUPERUSER_EMAIL")
+        os.environ["DJANGO_SUPERUSER_USERNAME"] = "admin"
+        os.environ["DJANGO_SUPERUSER_PASSWORD"] = "TempPass123!"
+        os.environ["DJANGO_SUPERUSER_EMAIL"] = "admin@example.com"
+
+        try:
+            call_command("bootstrap_production")
+        finally:
+            if previous_username is None:
+                os.environ.pop("DJANGO_SUPERUSER_USERNAME", None)
+            else:
+                os.environ["DJANGO_SUPERUSER_USERNAME"] = previous_username
+            if previous_password is None:
+                os.environ.pop("DJANGO_SUPERUSER_PASSWORD", None)
+            else:
+                os.environ["DJANGO_SUPERUSER_PASSWORD"] = previous_password
+            if previous_email is None:
+                os.environ.pop("DJANGO_SUPERUSER_EMAIL", None)
+            else:
+                os.environ["DJANGO_SUPERUSER_EMAIL"] = previous_email
+
+        user = get_user_model().objects.get(username="admin")
+        self.assertTrue(user.is_staff)
+        self.assertTrue(user.is_superuser)
+        self.assertTrue(user.check_password("TempPass123!"))

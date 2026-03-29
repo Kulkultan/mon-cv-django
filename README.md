@@ -35,11 +35,14 @@ Copier `.env.example` puis définir au minimum :
 - `ALLOWED_HOSTS`
 - `CSRF_TRUSTED_ORIGINS`
 - `DATABASE_URL` si tu utilises PostgreSQL en production
+- `DJANGO_SUPERUSER_USERNAME`
+- `DJANGO_SUPERUSER_PASSWORD`
+- `DJANGO_SUPERUSER_EMAIL`
 
 ### Commandes de déploiement
 Build command :
 ```bash
-./build.sh
+bash build.sh
 ```
 
 Start command :
@@ -53,3 +56,7 @@ Les données du CV peuvent être exportées puis réimportées :
 python manage.py dumpdata cv --indent 2 --output cv/fixtures/cv_data.json
 python manage.py loaddata cv/fixtures/cv_data.json
 ```
+
+Au déploiement, `python manage.py bootstrap_production` :
+- charge `cv/fixtures/cv_data.json` si la base est vide
+- crée ou met à jour le superuser à partir des variables `DJANGO_SUPERUSER_*`
