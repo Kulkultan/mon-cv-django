@@ -87,3 +87,26 @@ class CvPrintRegressionTests(TestCase):
         self.assertTrue(user.is_staff)
         self.assertTrue(user.is_superuser)
         self.assertTrue(user.check_password("TempPass123!"))
+
+    def test_bootstrap_production_updates_legacy_public_email(self):
+        previous_public_email = os.environ.get("PUBLIC_CONTACT_EMAIL")
+        Profile.objects.create(
+            full_name="Existing User",
+            headline_fr="Headline",
+            bio_fr="Bio",
+            email="zaddywilfriedlegre@gmail.com",
+            phone="+22500000000",
+            address_fr="Abidjan",
+        )
+        os.environ["PUBLIC_CONTACT_EMAIL"] = "contact@zaddywilfriedlegre.com"
+
+        try:
+            call_command("bootstrap_production")
+        finally:
+            if previous_public_email is None:
+                os.environ.pop("PUBLIC_CONTACT_EMAIL", None)
+            else:
+                os.environ["PUBLIC_CONTACT_EMAIL"] = previous_public_email
+
+        profile = Profile.objects.get(full_name="Existing User")
+        self.assertEqual(profile.email, "contact@zaddywilfriedlegre.com")

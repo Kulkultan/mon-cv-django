@@ -7,6 +7,9 @@ from django.core.management import BaseCommand, call_command
 
 from cv.models import Profile
 
+LEGACY_PUBLIC_EMAIL = "zaddywilfriedlegre@gmail.com"
+DEFAULT_PUBLIC_EMAIL = "contact@zaddywilfriedlegre.com"
+
 
 class Command(BaseCommand):
     help = "Load initial CV data when the database is empty and create/update a superuser from environment variables."
@@ -20,6 +23,11 @@ class Command(BaseCommand):
             self.stdout.write(self.style.SUCCESS("Initial CV data loaded."))
         else:
             self.stdout.write("Initial CV data already present or fixture missing.")
+
+        public_email = os.environ.get("PUBLIC_CONTACT_EMAIL", DEFAULT_PUBLIC_EMAIL)
+        updated_profiles = Profile.objects.filter(email__in=["", LEGACY_PUBLIC_EMAIL]).update(email=public_email)
+        if updated_profiles:
+            self.stdout.write(self.style.SUCCESS(f"Updated public contact email on {updated_profiles} profile(s)."))
 
         username = os.environ.get("DJANGO_SUPERUSER_USERNAME")
         password = os.environ.get("DJANGO_SUPERUSER_PASSWORD")
