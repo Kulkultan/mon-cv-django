@@ -1,75 +1,85 @@
-{% load static %}
-{% load i18n %}
+{% load static i18n %}
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="{{ request.LANGUAGE_CODE|default:'fr' }}">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}CV — LEGRE Zaddy Wilfried Ghislain{% endblock %}</title>
-    <link rel="stylesheet" href="{% static 'cv/css/style.css' %}">
+    <title>{% block title %}CV — {{ profile.full_name|default:'Wilfried LEGRE' }}{% endblock %}</title>
+    <meta name="description" content="{{ profile.headline|default:'CV premium' }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'cv/css/style.css' %}">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#profil">{% trans "Profil" %}</a></li>
-            <li><a href="#contact">{% trans "Contacts" %}</a></li>
-            <li><a href="#experiences">{% trans "Expériences" %}</a></li>
-            <li><a href="#certifications">{% trans "Certifications" %}</a></li>
-            <li><a href="#formation">{% trans "Cursus Académique" %}</a></li>
-            <li><a href="#competences">{% trans "Compétences" %}</a></li>
-            <li><a href="#langues">{% trans "Langues" %}</a></li>
-        </ul>
-        <div class="nav-actions">
-            {% if request.LANGUAGE_CODE == 'fr' %}
-                <a href="/en/" class="btn-lang">EN</a>
-            {% else %}
-                <a href="/fr/" class="btn-lang">FR</a>
-            {% endif %}
-            <button class="btn-theme" onclick="toggleTheme()">
-                <i class="fas fa-moon"></i>
-            </button>
-        </div>
-    </nav>
+    <div class="page-glow glow-one"></div>
+    <div class="page-glow glow-two"></div>
 
-    <main>
+    <header class="site-header no-print">
+        <div class="nav-shell">
+            <a class="brand" href="#profil">
+                <div class="brand-mark">WL</div>
+                <div class="brand-copy">
+                    <strong>{{ profile.full_name|default:'Wilfried LEGRE' }}</strong>
+                    <small>{{ profile.headline|default:'QHSE Expert' }}</small>
+                </div>
+            </a>
+
+            <nav class="site-nav">
+                <a href="#profil">{{ ui.nav_profile }}</a>
+                <a href="#contact">{{ ui.nav_contact }}</a>
+                <a href="#experiences">{{ ui.nav_experiences }}</a>
+                <a href="#certifications">{{ ui.nav_certifications }}</a>
+                <a href="#formation">{{ ui.nav_education }}</a>
+                <a href="#competences">{{ ui.nav_skills }}</a>
+                <a href="#langues">{{ ui.nav_languages }}</a>
+            </nav>
+
+            <div class="header-actions">
+                {% if request.LANGUAGE_CODE == 'fr' %}
+                    {% language 'en' %}
+                        <a href="{% url 'home' %}" class="chip-action">EN</a>
+                    {% endlanguage %}
+                {% else %}
+                    {% language 'fr' %}
+                        <a href="{% url 'home' %}" class="chip-action">FR</a>
+                    {% endlanguage %}
+                {% endif %}
+                <button class="chip-action chip-icon" type="button" onclick="toggleTheme()" aria-label="Changer le thème">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-shell">
         {% block content %}{% endblock %}
     </main>
 
-    <footer>
-        <p>LEGRE Zaddy Wilfried Ghislain — Qualiticien QHSE BAC+6 — Abidjan, Côte d'Ivoire</p>
-
+    <footer class="site-footer no-print">
+        <p>{{ profile.footer|default:ui.footer_text }}</p>
     </footer>
 
     <script>
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, { threshold: 0.1 });
-
-        document.querySelectorAll('.timeline-item, .carte, .contact-item, .tags li, .langue-item')
-            .forEach(el => observer.observe(el));
-
         function toggleTheme() {
-            document.body.classList.toggle('dark');
-            const icon = document.querySelector('.btn-theme i');
-            if (document.body.classList.contains('dark')) {
-                icon.className = 'fas fa-sun';
+            document.body.classList.toggle('theme-dark');
+            const icon = document.querySelector('.chip-icon i');
+            if (document.body.classList.contains('theme-dark')) {
                 localStorage.setItem('theme', 'dark');
+                if (icon) icon.className = 'fas fa-sun';
             } else {
-                icon.className = 'fas fa-moon';
                 localStorage.setItem('theme', 'light');
+                if (icon) icon.className = 'fas fa-moon';
             }
         }
-
-        if (localStorage.getItem('theme') === 'dark') {
-            document.body.classList.add('dark');
-            document.querySelector('.btn-theme i').className = 'fas fa-sun';
-        }
+        document.addEventListener('DOMContentLoaded', function () {
+            if (localStorage.getItem('theme') === 'dark') {
+                document.body.classList.add('theme-dark');
+                const icon = document.querySelector('.chip-icon i');
+                if (icon) icon.className = 'fas fa-sun';
+            }
+        });
     </script>
-
 </body>
 </html>

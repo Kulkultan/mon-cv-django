@@ -1,0 +1,642 @@
+[
+{
+  "model": "cv.uitext",
+  "pk": 1,
+  "fields": {
+    "key": "nav_profile",
+    "text_fr": "Profil",
+    "text_en": "Profile"
+  }
+},
+{
+  "model": "cv.uitext",
+  "pk": 2,
+  "fields": {
+    "key": "nav_contact",
+    "text_fr": "Contacts",
+    "text_en": "Contact"
+  }
+},
+{
+  "model": "cv.uitext",
+  "pk": 3,
+  "fields": {
+    "key": "nav_experiences",
+    "text_fr": "Expériences",
+    "text_en": "Experience"
+  }
+},
+{
+  "model": "cv.uitext",
+  "pk": 4,
+  "fields": {
+    "key": "nav_certifications",
+    "text_fr": "Certifications",
+    "text_en": "Certifications"
+  }
+},
+{
+  "model": "cv.uitext",
+  "pk": 5,
+  "fields": {
+    "key": "nav_education",
+    "text_fr": "Formation",
+    "text_en": "Education"
+  }
+},
+{
+  "model": "cv.uitext",
+  "pk": 6,
+  "fields": {
+    "key": "nav_skills",
+    "text_fr": "Compétences",
+    "text_en": "Skills"
+  }
+},
+{
+  "model": "cv.uitext",
+  "pk": 7,
+  "fields": {
+    "key": "nav_languages",
+    "text_fr": "Langues",
+    "text_en": "Languages"
+  }
+},
+{
+  "model": "cv.uitext",
+  "pk": 8,
+  "fields": {
+    "key": "section_profile",
+    "text_fr": "Profil exécutif",
+    "text_en": "Executive profile"
+  }
+},
+{
+  "model": "cv.uitext",
+  "pk": 9,
+  "fields": {
+    "key": "section_contact",
+    "text_fr": "Coordonnées",
+    "text_en": "Contacts"
+  }
+},
+{
+  "model": "cv.uitext",
+  "pk": 10,
+  "fields": {
+    "key": "section_experiences",
+    "text_fr": "Expériences professionnelles",
+    "text_en": "Professional experience"
+  }
+},
+{
+  "model": "cv.uitext",
+  "pk": 11,
+  "fields": {
+    "key": "section_certifications",
+    "text_fr": "Certifications",
+    "text_en": "Certificates"
+  }
+},
+{
+  "model": "cv.uitext",
+  "pk": 12,
+  "fields": {
+    "key": "section_education",
+    "text_fr": "Cursus académique",
+    "text_en": "Education"
+  }
+},
+{
+  "model": "cv.uitext",
+  "pk": 13,
+  "fields": {
+    "key": "section_skills",
+    "text_fr": "Compétences clés",
+    "text_en": "Core skills"
+  }
+},
+{
+  "model": "cv.uitext",
+  "pk": 14,
+  "fields": {
+    "key": "section_languages",
+    "text_fr": "Langues",
+    "text_en": "Languages"
+  }
+},
+{
+  "model": "cv.uitext",
+  "pk": 15,
+  "fields": {
+    "key": "download_cv",
+    "text_fr": "Télécharger informations du CV (PDF)",
+    "text_en": "Download CV informations (PDF)"
+  }
+},
+{
+  "model": "cv.uitext",
+  "pk": 16,
+  "fields": {
+    "key": "footer_text",
+    "text_fr": "Zaddy Wilfried Ghislain LEGRE — Qualiticien QHSE — Abidjan, Côte d’Ivoire",
+    "text_en": "Zaddy Wilfried Ghislain LEGRE — QHSE Specialist — Abidjan, Ivory Coast"
+  }
+},
+{
+  "model": "cv.uitext",
+  "pk": 17,
+  "fields": {
+    "key": "address_label",
+    "text_fr": "Adresse",
+    "text_en": "Address"
+  }
+},
+{
+  "model": "cv.uitext",
+  "pk": 18,
+  "fields": {
+    "key": "total_experience_label",
+    "text_fr": "Expérience totale",
+    "text_en": "Total experience"
+  }
+},
+{
+  "model": "cv.uitext",
+  "pk": 19,
+  "fields": {
+    "key": "current_label",
+    "text_fr": "Poste actuel",
+    "text_en": "Current role"
+  }
+},
+{
+  "model": "cv.uitext",
+  "pk": 20,
+  "fields": {
+    "key": "linkedin_label",
+    "text_fr": "Profil LinkedIn",
+    "text_en": "LinkedIn profile"
+  }
+},
+{
+  "model": "cv.profile",
+  "pk": 1,
+  "fields": {
+    "full_name": "Zaddy Wilfried Ghislain LEGRE",
+    "headline_fr": "Qualiticien QHSE · Management de la qualité · Python Django",
+    "headline_en": "QHSE Specialist · Quality Management · Python Django",
+    "bio_fr": "Qualiticien doté de plus de 11 années d’expérience, ayant évolué dans les secteurs de la santé, de l’administration publique et du conseil. J’interviens sur le management de la qualité, l’amélioration continue, la conformité, l’accompagnement vers la certification et la structuration des processus. J’étends aujourd’hui cette expertise métier au digital à travers Python afin de concevoir des outils sobres, utiles et orientés impact.",
+    "bio_en": "QHSE professional with 11+ years of experience across healthcare, public administration and consulting. I specialize in quality management, continuous improvement, compliance, certification readiness and process structuring. I now extend that business expertise into digital delivery through Python Django to design clean, useful and impact-driven tools.",
+    "email": "zaddywilfriedlegre@gmail.com",
+    "phone": "+225 07 48 91 38 04",
+    "address_fr": "Abidjan, Côte d’Ivoire",
+    "address_en": "Abidjan, Côte d’Ivoire",
+    "footer_fr": "Zaddy Wilfried Ghislain LEGRE — Qualiticien QHSE — Abidjan, Côte d’Ivoire",
+    "footer_en": "Zaddy Wilfried Ghislain LEGRE — QHSE Specialist — Abidjan, Côte d’Ivoire",
+    "linkedin_url": "https://www.linkedin.com/in/zaddy-wilfried-g-legre-399654112/",
+    "portfolio_url": "",
+    "keywords_fr": "QHSE, management de la qualité, amélioration continue, audit interne, ISO 9001, ISO 15189, gestion documentaire, conduite du changement, conformité, pilotage de projets, Python Django, transformation digitale",
+    "keywords_en": "QHSE, quality management, continuous improvement, internal audit, ISO 9001, ISO 15189, document control, change management, compliance, project management, Python Django, digital transformation"
+  }
+},
+{
+  "model": "cv.experience",
+  "pk": 1,
+  "fields": {
+    "start_date": "2025-07-27",
+    "end_date": "2026-03-29",
+    "is_current": true,
+    "order": 1,
+    "title_fr": "Chef de service Promotion de la Qualité",
+    "title_en": "Head of Quality Promotion",
+    "company_fr": "Ministère d'Etat, Ministère de la Fonction Publique et de la Modernisation de l'Administration",
+    "company_en": "Ministry of Public Service and Administrative Modernization",
+    "location_fr": "Abidjan, Côte d’Ivoire",
+    "location_en": "Abidjan, Côte d’Ivoire",
+    "description_fr": "Pilotage des actions de promotion de la qualité et d’amélioration continue au sein des services.\r\nStructuration des référentiels, outils et supports nécessaires à la diffusion de la culture qualité.\r\nAccompagnement des équipes dans l’appropriation des standards, des bonnes pratiques et des plans d’action.",
+    "description_en": "Led quality promotion and continuous improvement initiatives across public service teams.\r\nStructured reference frameworks, tools and support materials to strengthen quality culture.\r\nSupported teams in adopting standards, best practices and action plans.",
+    "highlights_fr": "12+ initiatives qualité structurées\r\n100% des livrables alignés sur les exigences internes\r\nAnimation transverse des parties prenantes",
+    "highlights_en": "12+ quality initiatives structured\r\n100% of deliverables aligned with internal requirements\r\nCross-functional stakeholder coordination"
+  }
+},
+{
+  "model": "cv.experience",
+  "pk": 2,
+  "fields": {
+    "start_date": "2023-02-23",
+    "end_date": "2025-07-26",
+    "is_current": false,
+    "order": 2,
+    "title_fr": "Chef du service Qualité et sécurité des soins",
+    "title_en": "Head of Quality and Patient Safety",
+    "company_fr": "Centre National de Prévention et de Traitement de l'Insuffisance Rénale (CNPTIR)",
+    "company_en": "National Center for Kidney Disease Prevention and Treatment (CNPTIR)",
+    "location_fr": "Abidjan, Côte d’Ivoire",
+    "location_en": "Abidjan, Côte d’Ivoire",
+    "description_fr": "Coordination des démarches qualité et sécurité des soins dans un environnement de santé sensible.\r\nOrganisation du suivi des non-conformités, des actions correctives et de la documentation qualité.\r\nContribution à la préparation des audits, à la fiabilisation des pratiques et à la montée en maturité du système.",
+    "description_en": "Coordinated quality and patient safety initiatives in a sensitive healthcare environment.\r\nOversaw non-conformity follow-up, corrective actions and quality documentation.\r\nContributed to audit readiness, practice reliability and maturity of the management system.",
+    "highlights_fr": "20+ revues qualité et sécurité coordonnées\r\nMise en place de plans d’amélioration traçables\r\nRenforcement durable de la conformité documentaire",
+    "highlights_en": "20+ quality and safety reviews coordinated\r\nTraceable improvement plans deployed\r\nSustained reinforcement of document compliance"
+  }
+},
+{
+  "model": "cv.experience",
+  "pk": 3,
+  "fields": {
+    "start_date": "2022-01-01",
+    "end_date": "2023-01-01",
+    "is_current": false,
+    "order": 3,
+    "title_fr": "Assistant Qualité Freelance",
+    "title_en": "Freelance Quality Consultant",
+    "company_fr": "EL-KABOD",
+    "company_en": "EL-KABOD",
+    "location_fr": "Côte d’Ivoire",
+    "location_en": "Côte d’Ivoire",
+    "description_fr": "Intervention en appui sur des besoins ponctuels liés à la structuration qualité et à la formalisation documentaire.\r\nAnalyse des pratiques existantes et proposition de pistes d’amélioration concrètes.\r\nProduction de supports opérationnels, matrices et documents utiles à la mise sous contrôle.",
+    "description_en": "Supported short-term quality structuring and documentation needs on a freelance basis.\r\nReviewed existing practices and recommended practical improvement actions.\r\nProduced operational tools, matrices and control-oriented documentation.",
+    "highlights_fr": "3+ missions qualité accompagnées\r\nLivrables adaptés aux besoins des clients\r\nApproche conseil orientée résultats",
+    "highlights_en": "3+ quality assignments delivered\r\nTailored deliverables for client needs\r\nResults-oriented consulting approach"
+  }
+},
+{
+  "model": "cv.experience",
+  "pk": 4,
+  "fields": {
+    "start_date": "2020-06-01",
+    "end_date": "2021-12-01",
+    "is_current": false,
+    "order": 4,
+    "title_fr": "Assistant Qualité et Logisticien",
+    "title_en": "Quality and Logistics Coordinator",
+    "company_fr": "GERELK HOLDING",
+    "company_en": "GERELK HOLDING",
+    "location_fr": "Abidjan, Côte d’Ivoire",
+    "location_en": "Abidjan, Côte d’Ivoire",
+    "description_fr": "Contribution à la coordination entre exigences qualité et opérations logistiques.\r\nSuivi des flux, de la conformité opérationnelle et de la disponibilité des éléments nécessaires à l’activité.\r\nAppui à la résolution des écarts et à l’amélioration de la fluidité des opérations.",
+    "description_en": "Contributed to the coordination of quality requirements and logistics operations.\r\nMonitored flows, operational compliance and availability of resources.\r\nSupported issue resolution and improved operational flow.",
+    "highlights_fr": "Double périmètre qualité / logistique géré\r\nSuivi opérationnel des flux et des exigences\r\nRéactivité renforcée sur les opérations terrain",
+    "highlights_en": "Dual quality and logistics scope handled\r\nOperational tracking of flows and requirements\r\nStronger responsiveness on field operations"
+  }
+},
+{
+  "model": "cv.experience",
+  "pk": 5,
+  "fields": {
+    "start_date": "2019-12-01",
+    "end_date": "2020-03-01",
+    "is_current": false,
+    "order": 5,
+    "title_fr": "Technicien Dessinateur Projeteur",
+    "title_en": "Technical Drafting and Design Technician",
+    "company_fr": "3id2plus",
+    "company_en": "3id2plus",
+    "location_fr": "Abidjan, Côte d’Ivoire",
+    "location_en": "Abidjan, Côte d’Ivoire",
+    "description_fr": "Réalisation de livrables techniques et participation à la préparation de dossiers de conception.\r\nTravail avec une forte exigence de précision, de structuration et de cohérence documentaire.\r\nContribution à la qualité formelle des productions et à leur exploitabilité opérationnelle.",
+    "description_en": "Produced technical deliverables and contributed to design file preparation.\r\nWorked with strong standards of precision, structure and document consistency.\r\nSupported the formal quality and usability of project outputs.",
+    "highlights_fr": "Production de livrables techniques structurés\r\nRespect des délais de conception\r\nRigueur documentaire renforcée",
+    "highlights_en": "Structured technical deliverables produced\r\nDesign timelines respected\r\nStronger documentation discipline"
+  }
+},
+{
+  "model": "cv.experience",
+  "pk": 6,
+  "fields": {
+    "start_date": "2019-03-01",
+    "end_date": "2019-08-01",
+    "is_current": false,
+    "order": 6,
+    "title_fr": "Téléconseiller · Compte SFR France",
+    "title_en": "Customer Advisor · SFR France Account",
+    "company_fr": "INTELCIA",
+    "company_en": "INTELCIA",
+    "location_fr": "Abidjan, Côte d’Ivoire",
+    "location_en": "Abidjan, Côte d’Ivoire",
+    "description_fr": "Gestion des demandes clients avec respect des scripts, procédures et objectifs de qualité de service.\r\nDéveloppement d’une forte discipline d’écoute, de résolution et de traçabilité.\r\nContribution à la satisfaction client dans un environnement piloté par indicateurs.",
+    "description_en": "Handled customer requests while complying with scripts, procedures and service quality targets.\r\nDeveloped strong discipline in listening, resolution and traceability.\r\nContributed to customer satisfaction in a KPI-driven environment.",
+    "highlights_fr": "Exposition à des standards de service exigeants\r\nQualité de traitement et relation client suivies\r\nCulture performance / qualité renforcée",
+    "highlights_en": "Exposure to demanding service standards\r\nService quality and customer handling monitored\r\nPerformance and quality culture reinforced"
+  }
+},
+{
+  "model": "cv.experience",
+  "pk": 7,
+  "fields": {
+    "start_date": "2015-01-01",
+    "end_date": "2018-03-01",
+    "is_current": false,
+    "order": 7,
+    "title_fr": "Assistant Qualité et Projet",
+    "title_en": "Quality and Project Assistant",
+    "company_fr": "AFRI'K KING",
+    "company_en": "AFRI'K KING",
+    "location_fr": "Côte d’Ivoire",
+    "location_en": "Côte d’Ivoire",
+    "description_fr": "Appui au pilotage d’actions qualité et de projets opérationnels.\r\nContribution au suivi de tâches, à la formalisation des livrables et à l’organisation des priorités.\r\nParticipation à la mise en cohérence entre besoins métier et exécution terrain.",
+    "description_en": "Supported quality initiatives and operational project execution.\r\nContributed to task follow-up, deliverable formalization and priority management.\r\nHelped align business needs with field execution.",
+    "highlights_fr": "Coordination de missions qualité et projet\r\nAppui à la structuration des activités\r\nPolyvalence opérationnelle démontrée",
+    "highlights_en": "Coordinated quality and project assignments\r\nSupported activity structuring\r\nStrong operational versatility demonstrated"
+  }
+},
+{
+  "model": "cv.experience",
+  "pk": 8,
+  "fields": {
+    "start_date": "2017-06-01",
+    "end_date": "2017-12-01",
+    "is_current": false,
+    "order": 8,
+    "title_fr": "Qualiticien stagiaire",
+    "title_en": "Quality Intern",
+    "company_fr": "LECAT — Laboratoire d'Essai de Contrôle d'Analyse et d'Assistance Technique",
+    "company_en": "LECAT Laboratory",
+    "location_fr": "Côte d’Ivoire",
+    "location_en": "Côte d’Ivoire",
+    "description_fr": "Participation aux activités de contrôle, d’analyse et d’assistance technique dans un environnement structuré.\r\nObservation des pratiques qualité et appui à la formalisation de documents.\r\nRenforcement des fondamentaux liés à la rigueur, à la conformité et à la traçabilité.",
+    "description_en": "Contributed to testing, analysis and technical support activities in a structured environment.\r\nObserved quality practices and supported documentation formalization.\r\nStrengthened fundamentals in rigor, compliance and traceability.",
+    "highlights_fr": "Immersion en laboratoire technique\r\nPremiers réflexes qualité consolidés\r\nObservation structurée des processus",
+    "highlights_en": "Immersion in a technical laboratory\r\nEarly quality reflexes strengthened\r\nStructured process observation"
+  }
+},
+{
+  "model": "cv.experience",
+  "pk": 9,
+  "fields": {
+    "start_date": "2015-08-01",
+    "end_date": "2015-10-01",
+    "is_current": false,
+    "order": 9,
+    "title_fr": "Stagiaire conseil",
+    "title_en": "Consulting Intern",
+    "company_fr": "DESFORGES CONSULTING INTERNATIONAL",
+    "company_en": "DESFORGES CONSULTING INTERNATIONAL",
+    "location_fr": "Côte d’Ivoire",
+    "location_en": "Côte d’Ivoire",
+    "description_fr": "Découverte des méthodes de travail liées au conseil et à l’accompagnement des organisations.\r\nAppui sur la préparation de documents, analyses et supports de mission.\r\nMontée en compétence sur les attentes clients et la qualité des livrables.",
+    "description_en": "Discovered consulting working methods and organizational support practices.\r\nSupported the preparation of documents, analyses and mission materials.\r\nBuilt capability around client expectations and deliverable quality.",
+    "highlights_fr": "Découverte de l’environnement conseil\r\nPremiers appuis à la formalisation de missions\r\nExposition à des exigences clients",
+    "highlights_en": "Exposure to consulting environment\r\nSupported mission documentation\r\nExperience with client expectations"
+  }
+},
+{
+  "model": "cv.experience",
+  "pk": 10,
+  "fields": {
+    "start_date": "2011-10-01",
+    "end_date": "2012-04-01",
+    "is_current": false,
+    "order": 10,
+    "title_fr": "Stagiaire environnement",
+    "title_en": "Environmental Compliance Intern",
+    "company_fr": "CIAPOL — Centre Ivoirien Anti-Pollution",
+    "company_en": "CIAPOL — Ivorian Anti-Pollution Center",
+    "location_fr": "Côte d’Ivoire",
+    "location_en": "Côte d’Ivoire",
+    "description_fr": "Découverte du cadre de travail lié à l’environnement, à la conformité et au suivi technique.\r\nAppui à des activités d’observation, de collecte d’informations et de structuration de données.\r\nPremiers acquis sur les exigences réglementaires et la logique de prévention.",
+    "description_en": "Discovered work practices related to environment, compliance and technical follow-up.\r\nSupported observation activities, information gathering and data structuring.\r\nBuilt early foundations in regulatory requirements and prevention logic.",
+    "highlights_fr": "Première expérience terrain structurante\r\nSensibilisation aux enjeux environnementaux\r\nCulture conformité initiée très tôt",
+    "highlights_en": "Foundational first field experience\r\nExposure to environmental stakes\r\nEarly compliance mindset developed"
+  }
+},
+{
+  "model": "cv.education",
+  "pk": 2,
+  "fields": {
+    "start_date": "2019-01-01",
+    "end_date": "2020-01-01",
+    "is_current": false,
+    "order": 1,
+    "degree_fr": "Mastère Spécialisé en QHSE — BAC+6",
+    "degree_en": "Specialized Master's Degree in QHSE — BAC+6",
+    "school_fr": "Groupe INSTEC",
+    "school_en": "INSTEC Group",
+    "location_fr": "Abidjan, Côte d’Ivoire",
+    "location_en": "Abidjan, Ivory Coast"
+  }
+},
+{
+  "model": "cv.education",
+  "pk": 3,
+  "fields": {
+    "start_date": "2012-01-01",
+    "end_date": "2014-01-01",
+    "is_current": false,
+    "order": 2,
+    "degree_fr": "Master II en Sciences de Gestion  des Activités Minières, Pétrolières et Énergétiques — BAC+5",
+    "degree_en": "Master's Degree II in Management Sciences of Mining, Petroleum, and Energy Activities — BAC+5",
+    "school_fr": "Groupe CSI",
+    "school_en": "CSI Group",
+    "location_fr": "Abidjan, Côte d’Ivoire",
+    "location_en": "Abidjan, Ivory Coast"
+  }
+},
+{
+  "model": "cv.education",
+  "pk": 4,
+  "fields": {
+    "start_date": "2011-01-01",
+    "end_date": "2012-01-01",
+    "is_current": false,
+    "order": 3,
+    "degree_fr": "Diplôme Français Sciences de Gestion  des Activités Minières, Pétrolières et Énergétiques — BAC+3",
+    "degree_en": "French Bachelor's Degree in Management Sciences of Mining, Oil, and Energy Activities —BAC+3",
+    "school_fr": "Groupe CSI",
+    "school_en": "CSI Group",
+    "location_fr": "Abidjan, Côte d’Ivoire",
+    "location_en": "Abidjan, Ivory Coast"
+  }
+},
+{
+  "model": "cv.education",
+  "pk": 5,
+  "fields": {
+    "start_date": "2009-01-01",
+    "end_date": "2011-01-01",
+    "is_current": false,
+    "order": 3,
+    "degree_fr": "BTS Mines Géologie Pétrole — BAC+2",
+    "degree_en": "BTS Degree in Mining Geology Petroleum — BAC+2",
+    "school_fr": "Ecole Supérieur d'Energie et Pétrole",
+    "school_en": "Higher School of Energy and Petroleum",
+    "location_fr": "Abidjan, Côte d’Ivoire",
+    "location_en": "Abidjan, Ivory Coast"
+  }
+},
+{
+  "model": "cv.education",
+  "pk": 6,
+  "fields": {
+    "start_date": "2006-01-01",
+    "end_date": "2007-01-01",
+    "is_current": false,
+    "order": 5,
+    "degree_fr": "BAC série D — Mention Assez Bien",
+    "degree_en": "BAC series D — Fairly Good Mention",
+    "school_fr": "Lycée de Daoukro",
+    "school_en": "Daoukro High School",
+    "location_fr": "Abidjan, Côte d’Ivoire",
+    "location_en": "Abidjan, Ivory Coast"
+  }
+},
+{
+  "model": "cv.certification",
+  "pk": 1,
+  "fields": {
+    "order": 1,
+    "name_fr": "Sensibilisation ISO 9001:2015",
+    "name_en": "ISO 9001:2015 Awareness"
+  }
+},
+{
+  "model": "cv.certification",
+  "pk": 2,
+  "fields": {
+    "order": 2,
+    "name_fr": "Sensibilisation ISO 15189:2022",
+    "name_en": "ISO 15189:2022 Awareness"
+  }
+},
+{
+  "model": "cv.certification",
+  "pk": 3,
+  "fields": {
+    "order": 3,
+    "name_fr": "English Intermediate B1.2",
+    "name_en": "English Intermediate B1.2"
+  }
+},
+{
+  "model": "cv.certification",
+  "pk": 4,
+  "fields": {
+    "order": 4,
+    "name_fr": "Formation Hygiène et Sécurité",
+    "name_en": "Health and Safety Training"
+  }
+},
+{
+  "model": "cv.certification",
+  "pk": 5,
+  "fields": {
+    "order": 5,
+    "name_fr": "Leading Healthcare Quality and Safety",
+    "name_en": "Leading Healthcare Quality and Safety"
+  }
+},
+{
+  "model": "cv.skill",
+  "pk": 1,
+  "fields": {
+    "order": 1,
+    "name_fr": "Management de la qualité",
+    "name_en": "Quality management"
+  }
+},
+{
+  "model": "cv.skill",
+  "pk": 2,
+  "fields": {
+    "order": 2,
+    "name_fr": "Amélioration continue",
+    "name_en": "Continuous improvement"
+  }
+},
+{
+  "model": "cv.skill",
+  "pk": 3,
+  "fields": {
+    "order": 3,
+    "name_fr": "Audit interne",
+    "name_en": "Internal audit"
+  }
+},
+{
+  "model": "cv.skill",
+  "pk": 4,
+  "fields": {
+    "order": 4,
+    "name_fr": "ISO 9001",
+    "name_en": "ISO 9001"
+  }
+},
+{
+  "model": "cv.skill",
+  "pk": 5,
+  "fields": {
+    "order": 5,
+    "name_fr": "ISO 15189",
+    "name_en": "ISO 15189"
+  }
+},
+{
+  "model": "cv.skill",
+  "pk": 6,
+  "fields": {
+    "order": 6,
+    "name_fr": "Gestion documentaire",
+    "name_en": "Document control"
+  }
+},
+{
+  "model": "cv.skill",
+  "pk": 7,
+  "fields": {
+    "order": 7,
+    "name_fr": "Conduite du changement",
+    "name_en": "Change management"
+  }
+},
+{
+  "model": "cv.skill",
+  "pk": 8,
+  "fields": {
+    "order": 8,
+    "name_fr": "Gestion des risques",
+    "name_en": "Risk management"
+  }
+},
+{
+  "model": "cv.skill",
+  "pk": 9,
+  "fields": {
+    "order": 9,
+    "name_fr": "Pilotage de projets",
+    "name_en": "Project management"
+  }
+},
+{
+  "model": "cv.skill",
+  "pk": 10,
+  "fields": {
+    "order": 10,
+    "name_fr": "Python Django",
+    "name_en": "Python Django"
+  }
+},
+{
+  "model": "cv.language",
+  "pk": 1,
+  "fields": {
+    "order": 1,
+    "name_fr": "Français",
+    "name_en": "French",
+    "level_fr": "Natif",
+    "level_en": "Native",
+    "progress": 100
+  }
+},
+{
+  "model": "cv.language",
+  "pk": 2,
+  "fields": {
+    "order": 2,
+    "name_fr": "Anglais",
+    "name_en": "English",
+    "level_fr": "Intermédiaire",
+    "level_en": "Intermediate",
+    "progress": 70
+  }
+}
+]

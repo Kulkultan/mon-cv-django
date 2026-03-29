@@ -1,6 +1,8 @@
 from django.urls import path
-from . import views
+
+from .views import download_cv_pdf, home
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    path("", home, name="home"),
+    path("download/pdf/", download_cv_pdf, name="download_cv_pdf"),
 ]

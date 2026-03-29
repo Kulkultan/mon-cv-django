@@ -1,7 +1,10 @@
 venv/
+.idea/
 __pycache__/
-*.pyc
-*.pyo
+*.py[cod]
+*.sqlite3
 .env
-db.sqlite3
 staticfiles/
+media/
+tmp_*
+cv/fixtures/*.pyc
