@@ -172,7 +172,7 @@
 },
 {
   "model": "cv.uitext",
-  "pk": 20,
+  "pk": 20, 
   "fields": {
     "key": "linkedin_label",
     "text_fr": "Profil LinkedIn",
